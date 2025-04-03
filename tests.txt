@@ -1,0 +1,22 @@
+Unit Tests
+
+Multiplication function
+expect multiplication(x,y) to be the product of x and you
+expect x,y to be numbers
+expect multiplication to take in only 2 inputs
+expect multiplication(2,5) to be equal to 10
+expect multiplication(2,5,3) to be an error
+expect multiplication("2",5,true) to be an error
+expect multiplication(2) to be an error
+expect multiplication() to be an error
+
+concatOdds function
+expect concatOdds([array1],[array2]) to produce only 1 array 
+expect [array1],[array2] to be arrays of numbers
+expect concatOdds([array1],[array2], [array3]) to be an error
+expect concatOdds([array1]) to be an error 
+expect concatOdds("string") to be an error
+expect concatOdds(["string", true, false, number]) to be an error
+expect concatOdds([3,2,1], [1,1,1,2,4,5,7]) to return [1,3,5,7]
+
+
