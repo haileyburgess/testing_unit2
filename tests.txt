@@ -19,4 +19,22 @@ expect concatOdds("string") to be an error
 expect concatOdds(["string", true, false, number]) to be an error
 expect concatOdds([3,2,1], [1,1,1,2,4,5,7]) to return [1,3,5,7]
 
+Functional Tests
+Shopping Cart Checkout feature
 
+When a user clicks the shopping cart (with items), they should be shown a list of items in their cart. 
+When a user clicks the shopping cart but it is empty, they should see a message to Keep Shopping. 
+When a user clicks the Checkout button, they should be prompted to log in or select "Check out as a Guest." 
+When a user enters their user name and password, they should be logged into their account. 
+When a user enters their password incorrectly, they should be prompted to reset their password. 
+When a user enters a user name and password but an account does not exist for this user, they should be prompted to create an account. 
+When a user selects to check out as a guest, they should be asked if they'd like to create an account. 
+When a user selcts to check out as a guest and does want to create an account, they should be directed to the account creation dialog. 
+When a user selects to check out as a guest and does not want to create an account, they should move forward in the checkout process. 
+When a user logs in, their known information (email, address, etc) should be populated on the checkout screen. 
+When a user is checking out, they should be shown a progress bar at the top indicating their stage in the process. 
+When a user enters their shipping address, they should be able to select "Use as billing address." 
+When a user enters an address that is not valid, they should be shown an error and corrected address. 
+When a user enters a credit card or payment method that is not valid, they should be shown an error and message to correct it. 
+When a user tries to exit the checkout process (clicking back button, clicking to another page), they should be asked if they are sure.
+When a user completes the checkout process, they should be shown a confirmation screen. 
